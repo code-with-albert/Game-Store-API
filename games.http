@@ -1,0 +1,30 @@
+
+GET http://localhost:5109/games/
+
+###
+GET http://localhost:5109/games/8
+
+###
+POST http://localhost:5109/games/
+Content-Type: application/json
+
+{
+    "Name": "MHWorld",
+    "GenreId":3,
+    "Price": 99,
+    "ReleaseDate": "2022-09-23"
+}
+
+###
+PUT http://localhost:5109/games/8
+Content-Type: application/json
+
+{
+    "Name": "MHWorld",
+    "GenreId":3,
+    "Price": 89,
+    "ReleaseDate": "2022-09-23"
+}
+
+###
+DELETE http://localhost:5109/games/2
